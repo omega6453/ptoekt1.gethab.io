@@ -1,0 +1,208 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(87, 97, 245);
+}
+
+.page{
+    display: flex;
+    justify-content: center;
+}
+
+#osnova{
+    background: bisque;
+    width: 590px;
+}
+
+
+.header{
+    background: rgb(255, 237, 215); 
+    text-align: center 
+}
+#header_1{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+#header_2{
+    position: relative;
+    top: -5px;
+}
+
+#sod{
+    border-style:solid;
+    border-width: 0.5px;
+    width: 200px;
+    justify-content: center;
+
+}
+
+.sentr{
+    text-align: center;
+    position: relative;
+    
+}
+
+#oglavlenie{
+    font-weight: bold;
+    font-size: 17px;
+    top: -10px;
+}
+
+#nav{
+    position: relative;
+    text-align: center;
+    left: -35px;
+}
+
+#spisoc {
+    margin: 0 auto; /* Автоматически центрирует блок списка */
+    display: table; /* Делает список строчным элементом с возможностью центрирования */
+}
+
+#sod {
+    border-style: solid;
+    border-width: 1px;
+    width: 200px; /* Устанавливаем конкретную ширину */
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+#oglavlenie {
+    margin-bottom: -20px; /* Уменьшает расстояние между заголовком и списком */
+}
+
+.underline{
+    color: rgb(149, 149, 168);
+}
+
+.underline:hover {
+    text-decoration: underline;
+    color: rgb(3, 0, 153);
+}
+
+.custom-cursor:hover {
+    cursor: pointer; /* Можно заменить на любой другой */
+}
+
+.text-container{
+    width: 83%;
+    margin: auto;
+}
+
+#main{
+    font-size: 14px;
+}
+
+.nikita{
+    font-size: 14px;;
+
+}
+
+.custom-hr{
+    width: 430px;
+    height: 1px;
+    background-color: black;
+    margin: 20px auto;
+}
+
+.highlight-link {
+    text-decoration: none; /* Убираем стандартное подчеркивание */
+    color:rgb(125, 125, 218); /* Цвет текста */
+    transition: all 0.3s ease; /* Плавный переход */
+}
+
+.tooltip {
+    position: relative; /* Устанавливаем относительное позиционирование, чтобы подсказка была привязана к этому элементу */
+    display: inline-block; /* Делаем элемент строчно-блочным */
+    cursor: pointer; /* Изменяем курсор на "указатель" */
+}
+
+/* Псевдоэлемент ::after создаёт всплывающую надпись */
+.tooltip::after {
+    content: "Надейся дальше!)"; /* Текст подсказки */
+    position: absolute; /* Абсолютное позиционирование относительно родителя (.tooltip) */
+    bottom: 100%; /* Размещаем подсказку выше элемента */
+    left: 50%; /* Выравниваем подсказку по центру элемента */
+    transform: translateX(-50%); /* Смещаем подсказку влево на 50% её ширины, чтобы центрировать */
+    
+    background-color: rgb(0, 0, 0); /* Фон подсказки — чёрный */
+    color: rgb(255, 255, 255); /* Цвет текста — белый */
+    padding: 5px 10px; /* Отступы внутри подсказки */
+    border-radius: 5px; /* Закругляем углы */
+    font-size: 12px; /* Размер шрифта */
+    white-space: nowrap; /* Запрещаем перенос текста на новую строку */
+    
+    opacity: 0; /* По умолчанию делаем подсказку невидимой */
+    visibility: hidden; /* Скрываем подсказку */
+    transition: opacity 0.3s ease-in-out; /* Делаем плавное появление */
+}
+
+/* При наведении на .tooltip показываем подсказку */
+.tooltip:hover::after {
+    opacity: 1; /* Делаем подсказку видимой */
+    visibility: visible; /* Отображаем подсказку */
+}
+
+
+
+ /* Основной контейнер, чтобы разместить блок справа */
+ .container {
+    display: flex; /* Используем flexbox для горизонтального выравнивания */
+    justify-content: space-between; /* Пространство между элементами */
+}
+
+/* Блок с рамкой, внутри которого заголовок, фото и подпись */
+.photo-block {
+    border: 2px solid #333; /* Рамка вокруг блока */
+    padding: 15px; /* Отступы внутри блока */
+    width: 40%; /* Ширина блока */
+    box-sizing: border-box; /* Чтобы паддинги не выходили за пределы блока */
+    text-align: center; /* Выравнивание текста по центру */
+}
+
+.photo-block img {
+    width: 100%; /* Изменяет размер изображения на 100% от ширины блока */
+    height: auto; /* Сохраняет пропорции изображения */
+}
+
+.photo-block h2 {
+    margin: 10px 0; /* Отступы для заголовка */
+    font-size: 20px; /* Размер шрифта заголовка */
+}
+
+.photo-block p {
+    font-size: 14px; /* Размер шрифта подписи */
+    color: #000000; /* Цвет текста подписи */
+}
+
+/* Блок с текстом слева */
+.text-block {
+    width: 40%; /* Ширина блока с текстом */
+    padding: 20px;
+}
+
+.text {
+    padding-left: 30px; /* Отступ текста внутри блока */
+    padding-right: 30px;
+}
+
+.futer{
+    margin-bottom: 0;
+    
+    border-bottom: 0;
+    border-top: 5px solid rgb(255, 237, 215) ;
+    float: left;
+}
+
+.header-futer{
+    background: rgb(255, 237, 215); 
+    text-align: center; 
+    margin-top: 20px;
+}
